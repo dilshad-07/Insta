@@ -124,6 +124,11 @@ img{
     padding-top: 10px;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 /* media query */
 @media screen and (max-width: 600px) {
     #card{
