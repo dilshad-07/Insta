@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: gilroy; */
+}
+
+html body{
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    background-color: rgb(0, 208, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card{
+    height: 450px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    /* overflow: hidden; */
+    overflow-y: scroll;
+    border: 3px solid black;
+    position: relative;
+}
+
+#card::-webkit-scrollbar{
+    display: none;
+}
+
+#story{
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #dadada;
+    white-space: nowrap;
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+}
+
+#story::-webkit-scrollbar{
+    display: none;
+}
+
+.storyInsta{
+    border: 3px solid red;
+    height: 80px;
+    width: 80px;
+    margin-right: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.storyInsta img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#fullScreen{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+    background-size: cover;
+    background-position: center;
+    z-index: 999;
+}
+
+/* from here */
+
+#posts{
+    padding: 10px;
+}
+
+img{
+    height: 80%;
+    width: 100%;
+}
+
+#like{
+    font-size: 28px;
+    color: red;
+}
+
+#dblLike{
+    color: #fff;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.7;
+    transition: all ease 0.3s;
+}
+#dblLike2{
+    color: #fff;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.7;
+    transition: all ease 0.3s;
+}
+
+.ri-chat-3-line, .ri-send-plane-line{
+    font-size: 25px;
+}
+
+.div1{
+    position: relative;
+}
+.div2{
+    position: relative;
+    padding-top: 10px;
+}
+
+/* media query */
+@media screen and (max-width: 600px) {
+    #card{
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+    .ri-chat-3-line, .ri-send-plane-line{
+        font-size: 40px;
+    }
+    #like{
+        font-size: 40px;
+        color: red;
+    }
+  }
